@@ -18,4 +18,18 @@ fun main() {
 
     //ps can also be used as an expression just like the if
 
+    /**
+     * Breaking out of a nested for loop
+     */
+
+    outerLoop@ for (i in 4..7) { // label the outer loop with a of choice, in this case it is outerLoop
+        for (j in 1..3) {
+            println("$i $j")
+            if (i == 5 && j == 2)
+                break@outerLoop //is used alone, only breaks out of the inner loop
+
+        }
+
+    }
+
 }
