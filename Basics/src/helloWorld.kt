@@ -41,4 +41,15 @@ fun main(args: Array<String>) {
 
     // for characters
     val chars = 'a'..'z'
+
+    /*
+    *
+     * If expression
+     */
+    var max = if (num > a)
+        a
+    else num
+
+    println("Max = $max")
+
 }
