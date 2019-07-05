@@ -1,3 +1,8 @@
+package com.kotlin
+
+import com.java.JavaClass
+
+//@file:JvmName("CustomName") setting a custom name for the compiled class
 fun main(){
     JavaClass.printfromJava("Christine")
 
