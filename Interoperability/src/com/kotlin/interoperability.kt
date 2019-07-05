@@ -8,7 +8,8 @@ fun main(){
 
 }
 
-fun printer(name: String){
+@JvmOverloads // needed for Java for default params
+fun printer(name: String = "Doe"){
     println("Hello $name, I am from Kotlin")
 
 }
