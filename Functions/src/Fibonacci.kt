@@ -7,7 +7,7 @@ import java.math.BigInteger
 
 // fibonacci series = each no is the sum of its two preceding numbers ie Fn = Fn-1 + Fn-2
 fun main() {
-    println(getFibonacciNumber(10000, BigInteger("1"), BigInteger("0")))
+    println(getFibonacciNumber(10000, BigInteger("1"), BigInteger("0"))) // adding tailrec prevents errors that occur 
 }
 
 tailrec fun getFibonacciNumber(n: Int, a: BigInteger, b: BigInteger): BigInteger {
